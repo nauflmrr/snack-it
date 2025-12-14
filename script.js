@@ -44,7 +44,7 @@ const allProducts = [
 // VARIABEL GLOBAL
 let cart = JSON.parse(localStorage.getItem('snackit_cart')) || [];
 let currentFilter = 'all';
-const WHATSAPP_NUMBER = "0858177114822";
+const WHATSAPP_NUMBER = "+6285817711482";
 
 // ELEMEN DOM
 const domElements = {
@@ -409,7 +409,7 @@ function checkoutViaWhatsApp() {
     message += `No. WhatsApp: [Isi nomor WhatsApp]%0A%0A`;
     message += `Metode Pembayaran: [Transfer/COD]`;
     
-    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/+6285817711482${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
     
     // Kosongkan keranjang setelah checkout
@@ -506,3 +506,4 @@ function setCurrentYear() {
 // JALANKAN APLIKASI SAAT DOKUMEN LOAD
 
 document.addEventListener('DOMContentLoaded', initApp);
+
