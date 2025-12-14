@@ -465,7 +465,7 @@ function setupContactForm() {
             
             const whatsappMessage = `Halo Naufl SnackIt!%0A%0A*INQUIRY / PERTANYAAN*%0A%0ANama: ${name}%0AEmail: ${email}%0ANomor WhatsApp: ${phone}%0A%0APesan:%0A${message}%0A%0A_Lokasi: Pamulang, Tangerang Selatan_`;
             
-            const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappURL = `https://wa.me/+6285817711482${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
             window.open(whatsappURL, '_blank');
             
             showNotification(`Pesan dari ${name} akan dikirim via WhatsApp!`);
@@ -504,4 +504,5 @@ function setCurrentYear() {
 }
 
 // JALANKAN APLIKASI SAAT DOKUMEN LOAD
+
 document.addEventListener('DOMContentLoaded', initApp);
