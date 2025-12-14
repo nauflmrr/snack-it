@@ -410,7 +410,7 @@ function checkoutViaWhatsApp() {
     message += `Metode Pembayaran: [Transfer/COD]`;
     
     const whatsappURL = `https://wa.me/+6285817711482${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, '_blank');
+    window.open(whatsappURL, 'https://wa.me/+6285817711482');
     
     // Kosongkan keranjang setelah checkout
     cart = [];
@@ -506,4 +506,5 @@ function setCurrentYear() {
 // JALANKAN APLIKASI SAAT DOKUMEN LOAD
 
 document.addEventListener('DOMContentLoaded', initApp);
+
 
