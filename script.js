@@ -44,7 +44,7 @@ const allProducts = [
 // VARIABEL GLOBAL
 let cart = JSON.parse(localStorage.getItem('snackit_cart')) || [];
 let currentFilter = 'all';
-const WHATSAPP_NUMBER = "+6285817711482";
+const WHATSAPP_NUMBER = "6285817711482";
 
 // ELEMEN DOM
 const domElements = {
@@ -409,8 +409,8 @@ function checkoutViaWhatsApp() {
     message += `No. WhatsApp: [Isi nomor WhatsApp]%0A%0A`;
     message += `Metode Pembayaran: [Transfer/COD]`;
     
-    const whatsappURL = `https://wa.me/+6285817711482${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, 'https://wa.me/+6285817711482');
+    const whatsappURL = `https://wa.me/6285817711482${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, 'https://wa.me/6285817711482');
     
     // Kosongkan keranjang setelah checkout
     cart = [];
@@ -465,7 +465,7 @@ function setupContactForm() {
             
             const whatsappMessage = `Halo Naufl SnackIt!%0A%0A*INQUIRY / PERTANYAAN*%0A%0ANama: ${name}%0AEmail: ${email}%0ANomor WhatsApp: ${phone}%0A%0APesan:%0A${message}%0A%0A_Lokasi: Pamulang, Tangerang Selatan_`;
             
-            const whatsappURL = `https://wa.me/+6285817711482${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappURL = `https://wa.me/6285817711482${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
             window.open(whatsappURL, '_blank');
             
             showNotification(`Pesan dari ${name} akan dikirim via WhatsApp!`);
@@ -506,5 +506,6 @@ function setCurrentYear() {
 // JALANKAN APLIKASI SAAT DOKUMEN LOAD
 
 document.addEventListener('DOMContentLoaded', initApp);
+
 
 
