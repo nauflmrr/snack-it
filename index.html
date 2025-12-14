@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naufl SnackIt - Cemilan Enak Setiap Saat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">
+                <i class="fas fa-popcorn"></i> <span>Naufl</span>SnackIt
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Beranda</a></li>
+                <li><a href="#products" class="nav-link">Produk</a></li>
+                <li><a href="#categories" class="nav-link">Kategori</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-icon" id="cartToggle">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count-badge" id="cartCount">0</span>
+                </button>
+                <button class="btn-menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">Rasakan Kriuknya, Nikmati <span class="highlight">Keberagamannya</span></h1>
+                <p class="hero-subtitle">Lebih dari 30 varian cemilan tradisional & modern pilihan, dibuat dengan bahan berkualitas untuk temani setiap momen santaimu.</p>
+                <a href="#products" class="btn btn-primary">Jelajahi Produk <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="images/banner promo.jpeg" alt="Promo Cemilan Naufl SnackIt" class="hero-img">
+            </div>
+        </section>
+
+        <section class="section categories" id="categories">
+            <h2 class="section-title">Telusuri Berdasarkan Kategori</h2>
+            <div class="categories-grid" id="categoriesContainer"></div>
+        </section>
+
+        <section class="section products" id="products">
+            <div class="section-header">
+                <h2 class="section-title">Produk Kami</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                </div>
+            </div>
+            <div class="products-grid" id="productsContainer"></div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/owner.jpg" alt="Toko Naufl SnackIt" class="about-img">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Tentang <span class="highlight">Naufl SnackIt</span></h2>
+                    <p class="about-text">Naufl SnackIt adalah usaha yang berdedikasi untuk menyediakan berbagai macam cemilan berkualitas dengan cita rasa terbaik. Kami menyajikan lebih dari 30 varian cemilan, mulai dari keripik tradisional hingga snack modern yang disukai semua usia.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Kualitas Terjamin</h4>
+                            <p>Bahan pilihan dan proses produksi higienis</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Fresh Setiap Hari</h4>
+                            <p>Diproduksi fresh tanpa pengawet berlebihan</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Dari Hati</h4>
+                            <p>Dibuat dengan penuh cinta untuk pecinta cemilan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="contact-container">
+                <h2 class="section-title">Hubungi <span class="highlight">Kami</span></h2>
+                <p class="contact-subtitle">Pesan sekarang juga! Kami siap melayani kebutuhan cemilan Anda.</p>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Lokasi</h4>
+                                <p>Pamulang, Tangerang Selatan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telepon/WhatsApp</h4>
+                                <p>0858-1771-14822</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>order@nauflsnackit.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Jam Operasional</h4>
+                                <p>Senin - Minggu: 08.00 - 20.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Kirim Pesan</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nama Lengkap" required id="contactName">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" required id="contactEmail">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Nomor WhatsApp" required id="contactPhone" value="">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Pesan Anda..." rows="4" required id="contactMessage"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fab fa-whatsapp"></i> Kirim via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-bag"></i> Keranjang Belanja</h3>
+                <button class="btn-close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-body" id="cartItemsContainer">
+                <p class="cart-empty-message">Keranjang belanja kamu masih kosong.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-price" id="cartTotalPrice">Rp 0</span>
+                </div>
+                <button class="btn btn-checkout" id="checkoutBtn">
+                    <i class="fab fa-whatsapp"></i> Pesan via WhatsApp
+                </button>
+                <button class="btn btn-clear-cart" id="clearCartBtn">Kosongkan Keranjang</button>
+            </div>
+        </aside>
+        <div class="cart-overlay" id="cartOverlay"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Naufl SnackIt. Semua Hak Cipta Dilindungi.</p>
+            <p>Dibuat dengan <i class="fas fa-heart"></i> untuk pecinta cemilan di seluruh Indonesia.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
